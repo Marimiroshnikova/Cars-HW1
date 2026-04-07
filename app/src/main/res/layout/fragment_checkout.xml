@@ -47,7 +47,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+84932000000\nsupport@cars.com"
+            android:text="+91987654321\ngmail@example.com"
             android:textSize="10sp"
             android:textColor="#000000"
             android:layout_marginTop="4dp"/>
@@ -273,7 +273,8 @@
         android:id="@+id/layoutTotal"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:background="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:background="#ECECEC"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -30,8 +30,9 @@
             android:id="@+id/searchBar"
             android:layout_width="232dp"
             android:layout_height="38dp"
-            android:layout_centerHorizontal="true"
+            android:layout_toStartOf="@id/ivFilter"
             android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="18dp"
             android:orientation="horizontal"
             android:background="@drawable/search_bg"
@@ -52,12 +53,12 @@
         </LinearLayout>
 
         <ImageView
+            android:id="@+id/ivFilter"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_toEndOf="@id/searchBar"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="18dp"
-            android:layout_marginStart="40dp"
             android:src="@drawable/ic_sliders"/>
 
     </RelativeLayout>
@@ -104,6 +105,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="1dp"
                             android:src="@drawable/car1"
                             android:scaleType="centerCrop"/>
                     </androidx.cardview.widget.CardView>
@@ -146,6 +148,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="1dp"
                             android:src="@drawable/car2"
                             android:scaleType="centerCrop"/>
                     </androidx.cardview.widget.CardView>
@@ -196,6 +199,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="1dp"
                             android:src="@drawable/car3"
                             android:scaleType="centerCrop"/>
                     </androidx.cardview.widget.CardView>
@@ -238,6 +242,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="1dp"
                             android:src="@drawable/car4"
                             android:scaleType="centerCrop"/>
                     </androidx.cardview.widget.CardView>

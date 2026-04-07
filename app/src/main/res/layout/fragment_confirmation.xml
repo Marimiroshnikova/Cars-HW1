@@ -59,6 +59,7 @@
             android:layout_height="54dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/confirmation_button_bg"
+            android:backgroundTint="@null"
             android:text="Go To First Page"
             android:textAllCaps="false"
             android:textColor="#2C2C2C"
