@@ -5,8 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 
 class ConfirmationFragment : Fragment() {
 
@@ -17,8 +17,8 @@ class ConfirmationFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.btnTrack).setOnClickListener {
-            Toast.makeText(requireContext(), "Tracking unavailable", Toast.LENGTH_SHORT).show()
+        view.findViewById<Button>(R.id.btnGoFirstPage).setOnClickListener {
+            findNavController().popBackStack(R.id.productFragment, false)
         }
     }
 }
