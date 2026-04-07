@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/productFragment">
+
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.example.cars.ProductFragment"
+        android:label="Products">
+        <action
+            android:id="@+id/action_product_to_checkout"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.example.cars.CheckoutFragment"
+        android:label="Checkout">
+        <argument android:name="carName" app:argType="string" />
+        <argument android:name="carPrice" app:argType="float" />
+        <argument android:name="carImage" app:argType="integer" />
+        <action
+            android:id="@+id/action_checkout_to_confirmation"
+            app:destination="@id/confirmationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="com.example.cars.ConfirmationFragment"
+        android:label="Confirmation" />
+
+</navigation>
