@@ -6,7 +6,6 @@
     android:background="#FFFFFF"
     android:fitsSystemWindows="true">
 
-    <!-- Header: Shop + Search + Filter -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="115dp"
@@ -63,12 +62,10 @@
 
     </RelativeLayout>
 
-    <!-- Gap -->
     <View
         android:layout_width="match_parent"
         android:layout_height="50dp"/>
 
-    <!-- Grid -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -81,7 +78,6 @@
             android:paddingEnd="20dp"
             android:paddingBottom="24dp">
 
-            <!-- Row 1 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -89,7 +85,6 @@
                 android:layout_marginBottom="28dp"
                 android:baselineAligned="false">
 
-                <!-- Car 1 -->
                 <LinearLayout
                     android:id="@+id/car1Layout"
                     android:layout_width="0dp"
@@ -132,7 +127,6 @@
                         android:paddingTop="4dp"/>
                 </LinearLayout>
 
-                <!-- Car 2 -->
                 <LinearLayout
                     android:id="@+id/car2Layout"
                     android:layout_width="0dp"
@@ -177,14 +171,12 @@
 
             </LinearLayout>
 
-            <!-- Row 2 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:baselineAligned="false">
 
-                <!-- Car 3 -->
                 <LinearLayout
                     android:id="@+id/car3Layout"
                     android:layout_width="0dp"
@@ -227,7 +219,6 @@
                         android:paddingTop="4dp"/>
                 </LinearLayout>
 
-                <!-- Car 4 -->
                 <LinearLayout
                     android:id="@+id/car4Layout"
                     android:layout_width="0dp"

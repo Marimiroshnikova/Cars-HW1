@@ -19,7 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Contact Information -->
     <LinearLayout
         android:id="@+id/layoutContact"
         android:layout_width="0dp"
@@ -48,13 +47,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+84932000000\namandamorgan@example.com"
+            android:text="+84932000000\nsupport@cars.com"
             android:textSize="10sp"
             android:textColor="#000000"
             android:layout_marginTop="4dp"/>
     </LinearLayout>
 
-    <!-- Item header -->
     <RelativeLayout
         android:id="@+id/layoutItemHeader"
         android:layout_width="0dp"
@@ -102,7 +100,6 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <!-- Item row: circular image + name + prices -->
     <RelativeLayout
         android:id="@+id/layoutItemRow"
         android:layout_width="0dp"
@@ -114,7 +111,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Circular image -->
         <androidx.cardview.widget.CardView
             android:id="@+id/cardCarThumb"
             android:layout_width="60dp"
@@ -130,19 +126,17 @@
                 android:scaleType="centerCrop"/>
         </androidx.cardview.widget.CardView>
 
-        <!-- Car name -->
         <TextView
             android:id="@+id/tvCarName"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/cardCarThumb"
-            android:layout_marginStart="12dp"
+            android:layout_width="141dp"
+            android:layout_height="30dp"
             android:layout_centerVertical="true"
-            android:textSize="12sp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/cardCarThumb"
+            android:maxLines="2"
             android:textColor="#000000"
-            android:maxLines="2"/>
+            android:textSize="12sp" />
 
-        <!-- Discounted price -->
         <TextView
             android:id="@+id/tvDiscountedPrice"
             android:layout_width="wrap_content"
@@ -153,7 +147,6 @@
             android:textStyle="bold"
             android:textColor="#202020"/>
 
-        <!-- Original price (strikethrough) -->
         <TextView
             android:id="@+id/tvOriginalPrice"
             android:layout_width="wrap_content"
@@ -165,7 +158,6 @@
 
     </RelativeLayout>
 
-    <!-- Shipping Options -->
     <LinearLayout
         android:id="@+id/layoutShipping"
         android:layout_width="0dp"
@@ -187,7 +179,6 @@
             android:textColor="#202020"
             android:layout_marginBottom="10dp"/>
 
-        <!-- Standard -->
         <RelativeLayout
             android:id="@+id/layoutStandard"
             android:layout_width="match_parent"
@@ -229,7 +220,6 @@
                 android:textColor="#000000"/>
         </RelativeLayout>
 
-        <!-- Express -->
         <RelativeLayout
             android:id="@+id/layoutExpress"
             android:layout_width="match_parent"
@@ -279,7 +269,6 @@
             android:layout_marginTop="8dp"/>
     </LinearLayout>
 
-    <!-- Total + Pay -->
     <RelativeLayout
         android:id="@+id/layoutTotal"
         android:layout_width="0dp"
@@ -315,14 +304,15 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnPay"
-            android:layout_width="128dp"
-            android:layout_height="44dp"
+            android:layout_width="136dp"
+            android:layout_height="48dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:text="Pay"
-            android:textColor="#FFFFFF"
             android:backgroundTint="#202020"
-            app:cornerRadius="22dp"/>
+            android:text="PAY"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="24dp"
+            app:iconPadding="0dp" />
 
     </RelativeLayout>
 
